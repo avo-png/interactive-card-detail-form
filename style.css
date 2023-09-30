@@ -1,31 +1,55 @@
 body {
     background-image: url(./bg-main-desktop.png);
     background-repeat: no-repeat;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
     position: relative;
 }
 
-section {
+main {
+    display: flex;
+}
+
+section.left {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: calc(100vh - 100px);
-    align-content: center;
     justify-content: center;
+    order: 1;
+}
+
+section.right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: calc(100vh);
+    justify-content: center;
+    order: 2;
+    align-items: center;
 }
 
 img {
     width: 50%;
 }
 
-section>*:first-child {
+section.left>*:first-child {
     align-self: center;
 }
 
-section>:nth-child(2) {
+section.left>:nth-child(2) {
     align-self: end;
 }
 
 section img {
     margin: 20px;
+}
+
+input.text {
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    color: #b7b3b3;
+    border-color: #171515;
+    border-width: thin;
 }

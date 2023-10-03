@@ -100,14 +100,6 @@ img {
     width: 120%;
 }
 
-/* section.left>*:first-child {
-    align-self: center;
-}
-
-section.left>:nth-child(2) {
-    align-self: end;
-} */
-
 section img {
     margin: 20px;
 }
@@ -127,7 +119,7 @@ label {
     font-weight: bold;
 }
 
-input.submit {
+button {
     font-size: 16px;
     font-family: 'Space Grotesk', sans-serif;
     padding: 15px;

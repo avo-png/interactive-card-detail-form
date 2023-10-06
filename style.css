@@ -164,3 +164,16 @@ input#year {
 input#cvc {
     grid-area: 2 / 3 / 3 / 4;
 }
+
+#nameError {
+    display: none;
+    font-size: 0.8em;
+}
+
+#nameError.visible {
+  display: block;
+}
+
+input.invalid {
+  border-color: red;
+}

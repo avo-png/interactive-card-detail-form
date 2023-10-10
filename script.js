@@ -20,3 +20,8 @@ function validate(e) {
 
   return valid;
 }
+
+// year input
+document.getElementById(year)
+    .oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
+   

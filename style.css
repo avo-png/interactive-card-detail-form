@@ -177,3 +177,7 @@ input#cvc {
 input.invalid {
   border-color: red;
 }
+
+input.text {
+    color: #000;
+}

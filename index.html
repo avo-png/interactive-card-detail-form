@@ -27,13 +27,13 @@
                 <label for="name">CARDHOLDER NAME</label>
                 <input class="text" type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" aria-required="true" aria-invalid="true" required />
                 <label for="number">CARD NUMBER</label>
-                <input class="text" type="text" id="number" value="" name="card number" pattern="[0-9.]+" placeholder="e.g. 1234 5678 9123 0000" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)"/><br>
+                <input class="text" type="text" id="number" value="" name="card number" placeholder="e.g. 1234 5678 9123 0000" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)"/><br>
                 <div class="info-container">
                     <label for="date" id="exp">EXP. DATE (MM/YY)</label>
                     <input class="text" type="number" id="month" name="month" placeholder="MM" min="1" max="12" pattern="[0-9]*" inputmode="numeric" required />
                     <input class="text" type="number" id="year" name="year" placeholder="YY" min="1999" max="2050" inputmode="numeric" required />
                     <label for="CVC" id="security">CVC</label>
-                    <input class="text" type="number" id="cvc" name="cvc" placeholder="e.g. 123" pattern="\d{3,3}" required/><br>
+                    <input class="text" type="text" id="cvc" name="cvc" placeholder="e.g. 123" onKeyPress="if(this.value.length==3) return false;"><br>
                 </div>
                 <button type="Submit">Confirm</button>
                 <span role="alert" id="nameError" aria-hidden="true"> Please enter First Name </span>

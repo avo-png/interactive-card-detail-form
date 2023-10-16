@@ -27,7 +27,7 @@
                 <label for="name">CARDHOLDER NAME</label>
                 <input class="text" type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" aria-required="true" aria-invalid="true" required />
                 <label for="number">CARD NUMBER</label>
-                <input class="text" type="text" id="number" value="" name="card number" pattern="[0-9.]+" placeholder="e.g. 1234 5678 9123 0000" onkeypress="return checkDigit(event)"/><br>
+                <input class="text" type="text" id="number" value="" name="card number" pattern="[0-9.]+" placeholder="e.g. 1234 5678 9123 0000" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)"/><br>
                 <div class="info-container">
                     <label for="date" id="exp">EXP. DATE (MM/YY)</label>
                     <input class="text" type="number" id="month" name="month" placeholder="MM" min="1" max="12" pattern="[0-9]*" inputmode="numeric" required />

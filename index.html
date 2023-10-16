@@ -33,7 +33,7 @@
                     <input class="text" type="number" id="month" name="month" placeholder="MM" min="1" max="12" pattern="[0-9]*" inputmode="numeric" required />
                     <input class="text" type="number" id="year" name="year" placeholder="YY" min="1999" max="2050" inputmode="numeric" required />
                     <label for="CVC" id="security">CVC</label>
-                    <input class="text" type="text" id="cvc" name="cvc" placeholder="e.g. 123" required /><br>
+                    <input class="text" type="number" id="cvc" name="cvc" placeholder="e.g. 123" pattern="\d{3,3}" required/><br>
                 </div>
                 <button type="Submit">Confirm</button>
                 <span role="alert" id="nameError" aria-hidden="true"> Please enter First Name </span>

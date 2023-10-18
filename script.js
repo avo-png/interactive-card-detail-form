@@ -1,6 +1,6 @@
 // year input
-document.getElementById(year)
-    .oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
+// document.getElementById(year)
+//     .oninput = e => console.log(new Date(e.target.valueAsNumber, 0, 1))
    
 // credit card spacers
 function formats(ele,e){
@@ -26,6 +26,14 @@ document.getElementById("number").addEventListener("input", function(){
   document.getElementById("card-number").innerHTML = this.value;
 });
 
-document.getElementById("security").addEventListener("input", function(){
+document.getElementById("cvc").addEventListener("input", function(){
   document.getElementById("cvc-number").innerHTML = this.value;
+});
+
+document.getElementById("month").addEventListener("input", function(){
+  document.getElementById("card-month").innerHTML = this.value;
+});
+
+document.getElementById("year").addEventListener("input", function(){
+  document.getElementById("card-year").innerHTML = this.value;
 });

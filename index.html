@@ -17,7 +17,7 @@
                     <p class="clear-circle"></p>
                     <p class="card-number" id="card-number">0000 0000 0000 0000</p>
                     <p class="card-name" id="card-name">JANE APPLESEED</p>
-                    <p class="exp-date" id="card-month">00/<span class="exp-month" id="card-year">00</span></p>
+                    <p class="exp-date"><span id="card-month">00</span><span>/</span><span class="exp-month" id="card-year">00</span></p>
                 </article>
                 <img id="back" src="bg-card-back.png" alt="back of the card">
                 <article>
@@ -33,8 +33,8 @@
                 <input class="text" type="text" id="number" value="" name="card number" placeholder="e.g. 1234 5678 9123 0000" onkeypress='return formats(this,event)' onkeyup="return numberValidation(event)"/><br>
                 <div class="info-container">
                     <label for="date" id="exp">EXP. DATE (MM/YY)</label>
-                    <input class="text" type="text" id="month" name="month" placeholder="MM" min="1" max="12" inputmode="numeric" required />
-                    <input class="text" type="text" id="year" name="year" placeholder="YY" min="1920" max="2050" inputmode="numeric" required />
+                    <input class="text" type="number" id="month" name="month" placeholder="MM" min="01" max="12" inputmode="numeric" required />
+                    <input class="text" type="number" id="year" name="year" placeholder="YY" min="1920" max="2050" inputmode="numeric" required />
                     <label for="CVC" id="security">CVC</label>
                     <input class="text" type="text" id="cvc" name="cvc" placeholder="e.g. 123" onKeyPress="if(this.value.length==3) return false;"><br>
                 </div>

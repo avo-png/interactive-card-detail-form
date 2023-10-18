@@ -17,3 +17,15 @@ function numberValidation(e){
   return false;
 }
 
+// card will match the inputs of text
+document.getElementById("name").addEventListener("input", function(){
+  document.getElementById("card-name").innerHTML = this.value;
+});
+
+document.getElementById("number").addEventListener("input", function(){
+  document.getElementById("card-number").innerHTML = this.value;
+});
+
+document.getElementById("security").addEventListener("input", function(){
+  document.getElementById("cvc-number").innerHTML = this.value;
+});

@@ -15,11 +15,14 @@
                 <article>
                     <p class="full-circle"></p>
                     <p class="clear-circle"></p>
-                    <p class="card-number">0000 0000 0000 0000</p>
-                    <p class="card-name">JANE APPLESEED</p>
+                    <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+                    <p class="card-name" id="card-name">JANE APPLESEED</p>
                     <p class="exp-date">00/00</p>
                 </article>
                 <img id="back" src="bg-card-back.png" alt="back of the card">
+                <article>
+                    <p class="cvc-number" id="cvc-number">000</p>
+                </article>
             </figure>
         </section>
         <section class="right">
@@ -38,7 +41,7 @@
                 <button type="Submit">Confirm</button>
                 <span role="alert" id="nameError" aria-hidden="true"> Please enter First Name </span>
             </form>
-            <section class="completed">
+            <section class="completed" hidden>
                 <span class="dot"></span>
                 <h1>THANK YOU!</h1>
                 <p>We've added your card details</p>

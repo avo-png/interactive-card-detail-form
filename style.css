@@ -67,6 +67,16 @@ p.card-number {
     font-stretch: 226% !important;
 }
 
+p#cvc-number {
+    /* color: #fff; */
+    margin-top: 29.5em;
+    float: right;
+    font-size: 14px;
+    margin-left: 1em;
+    /* display: block; */
+    margin-left: 38em;
+}
+
 article p {
     color: #fff;
 }
@@ -182,9 +192,9 @@ input.text {
     color: #000;
 }
 
-form {
+/* form {
     display: none;
-}
+} */
 
 /* completed section */
 

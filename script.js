@@ -37,3 +37,24 @@ document.getElementById("month").addEventListener("input", function(){
 document.getElementById("year").addEventListener("input", function(){
   document.getElementById("card-year").innerHTML = this.value;
 });
+
+// button to reveal thank you
+// function hideMe() {
+//   var x = document.getElementsByClassName("completed");
+//   x.removeAttribute("hidden");
+// }
+
+// function hideMe() {
+//   var x = document.getElementsByID("completed");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//   }
+// }
+
+function hideMe(){
+  x = document.getElementsByID ('completed');
+  if(x[0].style.visibility === "hidden"){
+     x[0].style.visibility = "visible"   
+   }else{
+     x[0].style.visibility = "hidden"  
+  }}

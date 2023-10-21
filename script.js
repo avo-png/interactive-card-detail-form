@@ -51,10 +51,21 @@ document.getElementById("year").addEventListener("input", function(){
 //   }
 // }
 
-function hideMe(){
-  x = document.getElementsByID ('completed');
-  if(x[0].style.visibility === "hidden"){
-     x[0].style.visibility = "visible"   
-   }else{
-     x[0].style.visibility = "hidden"  
-  }}
+// function hideMe(){
+//   x = document.getElementsByID ('completed');
+//   if(x[0].style.visibility === "hidden"){
+//      x[0].style.visibility = "visible"   
+//    }else{
+//      x[0].style.visibility = "hidden"  
+//   }}
+
+var nextStep = document.querySelector('#nextStep');
+
+nextStep.addEventListener('click', function (e) {
+  e.preventDefault();
+  // Hide first view
+  document.getElementById('form').style.display = 'none';
+
+  // Show thank you message element
+  document.getElementById('completed').style.display = 'block';
+});
